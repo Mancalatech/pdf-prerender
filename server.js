@@ -4,16 +4,14 @@ const prerender = require('prerender');
 const PORT = process.env.PORT || 3000;
 
 const server = prerender({
-  port: PORT,
   chromeLocation: '/usr/bin/chromium',
   chromeFlags: [
-    '--no-sandbox',
-    '--disable-dev-shm-usage',
     '--headless',
     '--disable-gpu',
-    '--remote-debugging-port=9222',
+    '--no-sandbox',
+    '--disable-dev-shm-usage',
     '--disable-software-rasterizer',
-    '--disable-extensions'
+    '--remote-debugging-port=9222'
   ]
 });
 
