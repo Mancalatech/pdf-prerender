@@ -1,0 +1,12 @@
+{
+  "name": "prerender-service",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "prerender": "^5.24.0"
+  }
+}
